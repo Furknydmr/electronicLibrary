@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TasarimProje"
+        tools:targetApi="31">
+        <activity
+            android:name=".PersonelRezervasyonAll"
+            android:exported="false" />
+        <activity
+            android:name=".OkurDuyurular"
+            android:exported="false" />
+        <activity
+            android:name=".PersonelDuyuruEkle"
+            android:exported="false" />
+        <activity
+            android:name=".PersonelOduncAlanAll"
+            android:exported="false" />
+        <activity
+            android:name=".PersonelRezervayonIslemi"
+            android:exported="false" />
+        <activity
+            android:name=".PersonelGiris"
+            android:exported="false" />
+        <activity
+            android:name=".PersonelKitapBilgileri"
+            android:exported="false" />
+        <activity
+            android:name=".PersonelBarcod"
+            android:exported="false" />
+        <activity
+            android:name=".PersonelOkurEkle"
+            android:exported="false" />
+        <activity
+            android:name=".PersonelKitapEkle"
+            android:exported="false" />
+        <activity
+            android:name=".PersonelAnasayfa"
+            android:exported="false" />
+        <activity
+            android:name=".OkurBilgiGuncelle"
+            android:exported="false" />
+        <activity
+            android:name=".OkurKullaniciBilgilerim"
+            android:exported="false" />
+        <activity
+            android:name=".OkurAnasayfa"
+            android:exported="false" />
+        <activity
+            android:name=".OkurSifremiUnuttum"
+            android:exported="false" />
+        <activity
+            android:name=".OkurKayitOl"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

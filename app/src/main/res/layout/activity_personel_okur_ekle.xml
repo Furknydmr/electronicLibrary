@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context=".PersonelOkurEkle">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/btnMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_menu"
+            android:scaleType="fitStart"
+            android:importantForAccessibility="no" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/okuyucu_ekle"
+        android:paddingStart="40dp"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        tools:ignore="RtlSymmetry"
+        android:textStyle="bold"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+
+
+        >
+
+        <!-- Card içeriği buraya eklenir -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+
+            >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="@string/isim"/>
+
+            <EditText
+                android:id="@+id/etOkucuEkleAd"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:autofillHints="no"
+                android:inputType="text"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="@string/soyisim"/>
+
+            <EditText
+                android:id="@+id/etOkucuEkleSoyad"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize"
+                android:importantForAutofill="no"
+                android:inputType="text"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tcNumarasi"/>
+
+            <EditText
+                android:id="@+id/etOkucuEkleTCKimlik"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize"
+                android:importantForAutofill="no"
+                android:inputType="text"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="@string/eposta"/>
+
+            <EditText
+                android:id="@+id/etOkucuEkleEposta"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize"
+                android:importantForAutofill="no" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="@string/telefonNumarasi"/>
+
+            <EditText
+                android:id="@+id/etOkucuEkleTelefon"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize"
+                android:importantForAutofill="no"
+                android:inputType="text"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="@string/adres"/>
+
+            <EditText
+                android:id="@+id/etOkucuEkleAdres"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize"
+                android:inputType="text"
+                android:importantForAutofill="no" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="@string/meslek"/>
+
+            <EditText
+                android:id="@+id/etOkucuEkleMeslek"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize"
+                android:importantForAutofill="no"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btnKaydet"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/koyuBej"
+                android:text="@string/kaydet"
+                android:textColor="@color/white"
+                tools:ignore="VisualLintButtonSize" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+
+
+        <LinearLayout
+            android:background="@color/black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:baselineAligned="false"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:gravity="start"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+
+                <ImageView
+                    android:id="@+id/btnAnasayfa"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/home"
+                    android:layout_gravity="center"
+                    android:importantForAccessibility="no"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="@string/anasayfa"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    tools:ignore="NestedWeights,SmallSp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/btnOkurEkle"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/add_user"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/okur_ekle"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/btnKitapEkle"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/book_add"
+                    android:importantForAccessibility="no" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kitap_ekle"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"
+                android:gravity="end"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/btnDuyuruEkle"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/notice"
+                    android:importantForAccessibility="no" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/duyuru_ekle"
+                    android:textAlignment="center"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

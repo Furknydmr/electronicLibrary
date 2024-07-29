@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="girisSayfasiKucukYazılar">#A6A6A6</color>
+    <color name="edittextarkaplan">#D3D3D3</color>
+    <color name="logo">#CCC8C7</color>
+    <color name="benihatirla">#939393</color>
+    <color name="girisyap">#3B3B6D</color>
+    <color name="colory">#9E9999</color>
+    <color name="constraintColor">#CBC8C7</color>
+    <color name="backgroundColor">#CBC8C7</color>
+    <color name="buttonColor">#0D234E</color>
+    <color name="koyuBej">#6C6561</color>
+</resources>

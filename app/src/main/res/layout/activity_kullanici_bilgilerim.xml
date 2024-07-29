@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OkurKullaniciBilgilerim">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/logo"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/firstLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtHesapBilgilerimYazisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="80dp"
+                android:text="@string/hesap_bilgilerim"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+
+
+                <TextView
+                    android:id="@+id/txtKullaniciBilgilerimIsimYazisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/isim"
+                    android:textColor="@color/girisyap"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtHesapBilgilerim"/>
+
+
+                <TextView
+                    android:id="@+id/txtKullaniciBilgilerimIsim"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/kayitol_background_edit"
+                    android:padding="15dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtKullaniciBilgilerimIsimYazisi" />
+
+
+            <TextView
+                android:id="@+id/txtKullaniciBilgilerimEpostaYazisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/eposta"
+                android:textColor="@color/girisyap"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtKullaniciBilgilerimIsim" />
+
+            <TextView
+                android:id="@+id/txtKullaniciBilgilerimEposta"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@drawable/kayitol_background_edit"
+                android:padding="15dp" />
+            <TextView
+                android:id="@+id/txtKullaniciBilgilerimTCKimlikYazisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/tcNumarasi"
+                android:textColor="@color/girisyap"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/txtKullaniciBilgilerimTCKimlik"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@drawable/kayitol_background_edit"
+                android:padding="15dp" />
+            <TextView
+                android:id="@+id/txtKullaniciBilgilerimTelefonYazisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/telefonNumarasi"
+                android:textColor="@color/girisyap"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/txtKullaniciBilgilerimTelefon"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@drawable/kayitol_background_edit"
+                android:padding="15dp" />
+            <TextView
+                android:id="@+id/txtKullaniciBilgilerimMeslekYazisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/meslek"
+                android:textColor="@color/girisyap"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/txtKullaniciBilgilerimMeslek"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@drawable/kayitol_background_edit"
+                android:padding="15dp" />
+
+
+
+            <Button
+                android:id="@+id/btnBilgileriDuzenle"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/girissayfasigirisyapbtnedit"
+                android:text="@string/bilgi_duzenle"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/btnhesabimiSil"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/kayitolgirisyapsayfasinadonbtnedit"
+                android:text="@string/hesap_sil"
+                android:textColor="@color/girisyap"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="VisualLintButtonSize" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

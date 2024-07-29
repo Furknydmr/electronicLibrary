@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "144211729458",
+    "firebase_url": "https://projetasarim-d0861-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "projetasarim-d0861",
+    "storage_bucket": "projetasarim-d0861.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144211729458:android:c4764438cd6907edd9b02b",
+        "android_client_info": {
+          "package_name": "com.furkan.tasarimproje"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8apgbjcY5TWqPBBnsSwfud8jWgDfTYHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
